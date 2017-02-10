@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/require.js"></script>
+    <script type="text/javascript" src="js/app/config.js"></script>
+</head>
+<body>
+
+    <div id="content">content</div>
+
+    <script>
+        require(['jquery'], function($){
+            $("#content").css("background", '#996699');
+        });
+
+        // require(['util'], function(u){
+        //     u.message('信息提示', '', 'info');
+        // });
+
+        require(['demo'], function(d){
+            d.message('内容', 'info');
+        });
+    </script>
+
+</body>
+</html>
